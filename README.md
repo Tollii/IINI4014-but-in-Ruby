@@ -1,4 +1,4 @@
-# IINI4014-but-in-Ruby
+# IINI4014 assignments in Ruby
 Assignments for IINI4014, but in Ruby
 
 * Øving 1 - [Hello world](/oving1)
