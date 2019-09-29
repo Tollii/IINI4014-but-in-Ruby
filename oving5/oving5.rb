@@ -2,9 +2,13 @@ module TextScanner
 
 	# Returns a hash with each word in file as key and # of occurences as value
 	def self.get_word_frequency filename
-		Dir.chdir get_file_directory filename
+		begin
+			file = File.open filename
+		rescue
+			Dir.chdir get_file_directory filename			
+			file = File.open filename
+		end
 		word_hash = {}
-		file = File.open filename
 		file_data = file.readlines.map &:chomp
 		file_data.each do |line| 
 			line.split.each do |word|
@@ -18,10 +22,14 @@ module TextScanner
 
 	# Returns a list of line numbers where word is contained
 	def self.get_line_with_word filename, word
-		Dir.chdir get_file_directory filename
+		begin 
+			file = File.open filename
+		rescue
+			Dir.chdir get_file_directory filename
+			file = File.open filename
+		end
 		line_counter = 0
 		line_list = []
-		file = File.open filename
 		file_data = file.readlines.map &:chomp
 		file_data.each do |line|
 			line_counter += 1
@@ -44,6 +52,6 @@ end
 
 #---------------------------
 
-#TextScanner::get_word_frequency "random.txt"
+p TextScanner::get_word_frequency "random.txt"
 #TextScanner::get_line_with_word "random.txt", "Ghost"
 
