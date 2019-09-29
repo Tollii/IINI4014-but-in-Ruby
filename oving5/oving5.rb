@@ -6,7 +6,7 @@ module TextScanner
 			file = File.open filename
 		rescue
 			Dir.chdir get_file_directory filename			
-			file = File.open filename
+			retry
 		end
 		word_hash = {}
 		file_data = file.readlines.map &:chomp
@@ -26,7 +26,7 @@ module TextScanner
 			file = File.open filename
 		rescue
 			Dir.chdir get_file_directory filename
-			file = File.open filename
+			retry
 		end
 		line_counter = 0
 		line_list = []
