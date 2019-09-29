@@ -1,6 +1,5 @@
 # IINI4014-but-in-Ruby
-https://www.ntnu.no/studier/emner/IINI4014#tab=omEmnet
-Øvinger for IINI4014, bare skrevet i Ruby i stedet
+Assignments for IINI4014, but in Ruby
 
 * Øving 1 - [Hello world](/oving1)
 
