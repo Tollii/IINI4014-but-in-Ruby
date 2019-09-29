@@ -52,6 +52,6 @@ end
 
 #---------------------------
 
-p TextScanner::get_word_frequency "random.txt"
+#TextScanner::get_word_frequency "random.txt"
 #TextScanner::get_line_with_word "random.txt", "Ghost"
 
