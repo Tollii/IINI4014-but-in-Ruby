@@ -1,5 +1,3 @@
-
-
 def archimedesPI iterations = 10
 	if iterations >= 501;
 		puts "Please choose a lower number"
@@ -9,7 +7,7 @@ def archimedesPI iterations = 10
 	length_of_side = 1
 	number_of_sides = 6
 	pi = 0
-	iterations.times do |x|
+	iterations.times do
 		half_side = length_of_side.to_f / 2.0
 		a = Math.sqrt(1 - (half_side ** 2))
 		b = 1 - a
