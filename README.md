@@ -6,3 +6,5 @@ Assignments for IINI4014, but in Ruby
 * Assignment 2 - [π](/oving2)
 
 * Assignment 3 - [Prime numbers](/oving3)
+
+* Assignment 5 - [File I/O and text processing](/oving5)
