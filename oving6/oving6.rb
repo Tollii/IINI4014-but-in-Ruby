@@ -30,9 +30,7 @@ module WordSorter
     while swapped do
       swapped = false
       (sortList.length - 1).times do |i|
-        w1 = sortList[i].scan(/\w/).reduce(0) {|sum, e| sum + e.ord}
-        w2 = sortList[i.next].scan(/\w/).reduce(0) {|sum, e| sum + e.ord}
-        if w1 > w2
+        if sortList[i] > sortList[i.next]
          sortList[i], sortList[i.next] = sortList[i.next], sortList[i]
          swapped = true
         end
@@ -51,6 +49,3 @@ module WordSorter
 end
 
 p WordSorter::sort_words "random.txt"
-
-
-
