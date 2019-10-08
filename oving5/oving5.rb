@@ -2,10 +2,10 @@ module TextScanner
 
 	# Returns a hash with each word in file as key and # of occurences as value
 	def self.get_word_frequency filename
-		begin
+		begin 
 			file = File.open filename
 		rescue
-			Dir.chdir get_file_directory filename			
+			Dir.chdir get_file_directory filename
 			retry
 		end
 		word_hash = {}
