@@ -8,3 +8,5 @@ Assignments for IINI4014, but in Ruby
 * Assignment 3 - [Prime numbers](/oving3)
 
 * Assignment 5 - [File I/O and text processing](/oving5)
+
+* Assignment 6 - [Word sort](/oving6)
