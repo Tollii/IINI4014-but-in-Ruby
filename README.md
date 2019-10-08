@@ -9,4 +9,4 @@ Assignments for IINI4014, but in Ruby
 
 * Assignment 5 - [File I/O and text processing](/oving5)
 
-* Assignment 6 - [Word sort](/oving6)
+* Assignment 6 - [Word sort](/oving6/oving6.rb)
